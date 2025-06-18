@@ -1,0 +1,37 @@
+{
+  "name": "basic-api-wrapper-mcp",
+  "version": "1.0.0",
+  "description": "Basic API Wrapper MCP Server in TypeScript",
+  "type": "module",
+  "main": "dist/server.js",
+  "bin": {
+    "basic-api-wrapper-mcp": "dist/server.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsc --watch",
+    "setup-auth": "node dist/setup-auth.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0",
+    "keytar": "^7.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "api-wrapper",
+    "typescript"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+} 

@@ -1,0 +1,26 @@
+[package]
+name = "basic-api-wrapper-mcp"
+version = "1.0.0"
+edition = "2021"
+description = "Basic API Wrapper MCP Server in Rust"
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
+keywords = ["mcp", "model-context-protocol", "api-wrapper"]
+
+[[bin]]
+name = "basic-api-wrapper-mcp"
+path = "src/main.rs"
+
+[dependencies]
+tokio = { version = "1.0", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+reqwest = { version = "0.11", features = ["json"] }
+anyhow = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+mcp-sdk = "1.0"
+keyring = "2.0"
+dotenv = "0.15"
+
+[dev-dependencies]
+tokio-test = "0.4" 
